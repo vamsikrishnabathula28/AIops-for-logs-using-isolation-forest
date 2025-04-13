@@ -1,0 +1,49 @@
+Timestamp: 2025-04-13T23:41:37.368054
+Service: web
+Level: ERROR
+Message: Authentication failed
+
+Timestamp: 2025-04-13T23:30:16.368054
+Service: api
+Level: ERROR
+Message: Authentication failed
+
+Timestamp: 2025-04-13T23:25:45.123456
+Service: web
+Level: INFO
+Message: User login successful
+
+Timestamp: 2025-04-13T23:20:30.987654
+Service: api
+Level: INFO
+Message: API request processed successfully
+
+Timestamp: 2025-04-13T23:15:22.456789
+Service: web
+Level: WARNING
+Message: High memory usage detected
+
+Timestamp: 2025-04-13T23:10:15.789012
+Service: api
+Level: INFO
+Message: Database connection established
+
+Timestamp: 2025-04-13T23:05:08.345678
+Service: web
+Level: ERROR
+Message: Database connection failed
+
+Timestamp: 2025-04-13T23:00:01.234567
+Service: api
+Level: INFO
+Message: API request received
+
+Timestamp: 2025-04-13T22:55:54.567890
+Service: web
+Level: DEBUG
+Message: Debug information: request parameters
+
+Timestamp: 2025-04-13T22:50:47.890123
+Service: api
+Level: ERROR
+Message: Rate limit exceeded 
