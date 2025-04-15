@@ -13,3 +13,4 @@ Automated log analysis system using Isolation Forest algorithm to detect anomali
 pip install scikit-learn numpy
 python src/generate_logs.py
 python src/main.py
+```
