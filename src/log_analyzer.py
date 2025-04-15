@@ -5,14 +5,16 @@ class LogAnalyzer:
     def __init__(self, contamination=0.1):
         self.model = IsolationForest(
             contamination=contamination,
-            random_state=42
+            random_state=42,
+            n_estimators=100
         )
         
     def extract_features(self, log_entry):
         features = [
             log_entry['response_time'],
             int(str(log_entry['status_code'])[0]),
-            1 if log_entry['level'] == 'ERROR' else 0
+            1 if log_entry['level'] == 'ERROR' else 0,
+            1 if log_entry['level'] == 'WARNING' else 0
         ]
         return features
     

@@ -1,7 +1,6 @@
 from log_analyzer import LogAnalyzer
 import json
 from datetime import datetime
-import time
 
 def analyze_logs():
     analyzer = LogAnalyzer(contamination=0.05)
@@ -25,6 +24,8 @@ def analyze_logs():
             print(f"Service: {anomaly['log_entry']['service']}")
             print(f"Level: {anomaly['log_entry']['level']}")
             print(f"Message: {anomaly['log_entry']['message']}")
+            print(f"Response Time: {anomaly['log_entry']['response_time']:.2f}s")
+            print(f"Status Code: {anomaly['log_entry']['status_code']}")
             print(f"Anomaly Score: {anomaly['anomaly_score']:.3f}")
 
 if __name__ == "__main__":
